@@ -1,0 +1,6 @@
+<td class="query-count">
+  <span class="{{queriesCountLabelClass}} label">{{queries.length}}</span>
+</td>
+{{#each query in topFiveQueries}}
+  {{top-query query=query}}
+{{/each}}

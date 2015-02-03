@@ -1,0 +1,18 @@
+<td class="{{iconClass}} {{elapsedClass}} label">
+  {{#if waiting}}
+    <i class="icon-lock"></i>
+  {{/if}}
+  {{#if vacuum}}
+    <i class="icon-trash"></i>
+  {{/if}}
+  {{#if idle}}
+    <i class="icon-time"></i>
+  {{/if}}
+  {{query.elapsed}}
+  <div class="popover left">
+    <div class="popover-content">
+      {{query.query}}
+    </div>
+    <div class="arrow"></div>
+  </div>
+</td>

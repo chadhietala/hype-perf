@@ -1,0 +1,20 @@
+<td {{bind-attr class=":Query :query :elapsed elapsedClass iconClass"}}>
+      {{#if waiting}}
+        <i class="icon-lock"></i>
+      {{/if}}
+      {{#if vacuum}}
+        <i class="icon-trash"></i>
+      {{/if}}
+      {{#if idle}}
+        <i class="icon-time"></i>
+      {{/if}}
+      {{#if elapsed}}
+        {{formatElapsed elapsed}}
+      {{/if}}
+      <div class="popover left">
+        <div class="popover-content">
+          {{query.query}}
+        </div>
+        <div class="arrow"></div>
+      </div>
+    </td>

@@ -1,3 +1,12 @@
-<h2 id="title">Welcome to Ember.js</h2>
+<div id="latest-data">
+  <table class="table table-striped latest-data">
+    <tbody>
 
-{{outlet}}
+      {{#each sample in controller}}
+        {{#sample-row name=sample.name}}
+          {{latest-sample queries=sample.latestSample.queries}}
+        {{/sample-row}}
+      {{/each}}
+    </tbody>
+  </table>
+</div>

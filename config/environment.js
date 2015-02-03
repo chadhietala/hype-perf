@@ -43,5 +43,9 @@ module.exports = function(environment) {
 
   }
 
+
+  ENV.rows = 25;
+  ENV.timeout = 500;
+
   return ENV;
 };
